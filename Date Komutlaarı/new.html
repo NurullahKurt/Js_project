@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <script type="text/javascript">
+            //Date Komutu
+            var zaman= new Date();
+            document.write(zaman);
+
+            document.write("<hr>");
+            var saat=zaman.getHours();//get komutu bilgisayardan veri almak
+            document.write(saat);//saati yazdırır.
+
+            document.write("<hr>");
+            var saat=zaman.getMinutes();//get komutu bilgisayardan veri almak
+            document.write(saat);//dakika yazdırır.
+
+            document.write("<hr>");
+            var zamanDegistirilmis=new Date(2023, 2, 11, 22, 06, 0, 0);//Manuel zaman berilleme
+            document.write(zamanDegistirilmis);
+
+            document.write("<hr>");
+            zaman.setHours(23);//saat veisini manuel girdik
+            document.write(zaman);
+            
+            function yasKontrol(){
+                var dogumYili= prompt("Lütfen doğum yılınızı giriniz", "");
+                var MevcutZaman= new Date();
+                var sinirYili= MevcutZaman.getFullYear()-18;
+                if(dogumYili>sinirYili){
+                    alert("Ne yazık ki yasınız sitenin icerigini görüntülemek için uygun değil");
+                }
+                else{
+                    alert("Hoşgeldiniz, sitemizde keyifli bir zieret geçirmenizi umarız!");
+                }
+            }
+            yasKontrol();
+
+        </script>
+     </body>
+</html>
+        

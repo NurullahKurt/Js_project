@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            var şifre="Amed2121";
+            var hak=3;
+            while(hak>0){
+                var mesaj=prompt("Şifreyi Girin");
+                hak--;
+                if(hak==0)break;
+                if(mesaj==şifre){
+                    document.write("HOŞGELDİNİZ");
+                    break;
+                }
+                else{
+                    alert("Son"+hak+"hakkınız kaldı");
+                }
+            }
+            if(hak==0){
+                document.write("İZİNİZ GİREMEZSİNİZ");
+            }   
+        </script>
+    </head>
+</html>

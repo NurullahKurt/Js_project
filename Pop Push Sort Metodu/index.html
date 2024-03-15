@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <script type="text/javascript">
+            var mevcutdersler = new Array(" XHTML "," JS ");
+            var verilecekdersler = new Array(" HTML5 "," MySQL ");
+            var dersler=mevcutdersler.concat(verilecekdersler);//iki listeyi birleştiril.
+            document.write(dersler.join());//liste elemanlarını ekrana yazdır.
+
+            //Rehberi SORT METODU ile sıraladk
+            var rehber= new Array("Nurullah", "Ömer", "Merve", "Müzeyyen");
+            document.write("<hr>");
+            var  rehbersirali= rehber.sort();
+            document.write(rehber.join());
+
+            //SORT METODU
+            document.write("<hr>");
+            var derslersirali= dersler.sort();//sort alfabeye göre sıralar.
+            document.write(derslersirali.join());
+
+            //POP METODU
+            document.write("<hr>");
+            derslersirali.pop();//listenin son elemanını dışarı atar.
+            document.write(derslersirali.join());
+
+             //PUSH METODU
+            document.write("<hr/>");
+            derslersirali.push(" PYTHON", " JAVA"); //listeye yeni eleman ekler.
+            document.write(derslersirali.join());
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html> 
+    <head>>
+        <script type="text/javascript">
+             function ders(isim, kod, hoca, tarih)
+            {this.isim=isim;
+                this.kod=kod;
+                this.hoca=hoca;
+                this.tarih=tarih;
+                this.kacsenedir=kacsenedir;
+            }
+            function kacsenedir(){
+                var x=2012-this.tarih;
+                return x;
+            }
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            /*var ders1=new ders("Javascript", 101, "Mesut", 2010);
+            var ders2=new ders("XHTML", 102, "Nurullah", 2011);
+            document.write(ders1.isim);
+            document.write("<br>");
+            document.write(ders1.kacsenedir());
+            document.write("<br>");
+            document.write(ders2.kacsenedir());*/
+
+
+            
+            class Ogrenci{
+      // yapıcı methodumuzu oluşturalım
+       constructor(){    // class oluşturulur oluşturulmaz çalışacak
+          this.adi="Mehmet";   // bu class ın bir değişkeni olduğu için isim kısmında 'MFSoftware' yazdırmak istedik
+		  this.soyadi="Demir";   // bu class ın bir değişkeni olduğu için soyisim kısmında 'Blog' yazdırmak istedik
+       }
+    }
+	var ogrenci = new Ogrenci(); // class tan nesne oluşturduk
+	document.write("İsim: "+ogrenci.adi+" Soyisim: "+ogrenci.soyadi);  // sonucu ekranımıza yazdırdık
+     
+    
+     
+        </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <script>
+            var sahisBilgileri= new Array("Ad", "Soyad", "Yaş", "Dogum Yeri");
+            for(var i=0; i<sahisBilgileri.length;i++){
+                var y= prompt("Lütfen "+ i + sahisBilgileri , "bilgilerinizi giriniz")
+                sahisBilgileri[i]=y;
+            }
+            document.write(sahisBilgileri.join());
+        </script>
+    </body>
+</html>

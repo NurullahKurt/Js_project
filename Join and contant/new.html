@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script type="text/javascript">
+            var mevcutdersler= new Array("XHTML", "JS", "C");
+            var verilebilecekdersler=new Array("HTML5", "MySQL");
+
+            document.write("<br>");
+            var dersler=new Array();
+            dersler[0]= mevcutdersler[0];
+            dersler[1]= mevcutdersler[1];
+            dersler[2]= verilebilecekdersler[0];
+            dersler[3]= verilebilecekdersler[1];
+            document.write(dersler.join());//join for döngüsünü kısaltması
+
+            document.write("<hr>");
+            document.write((verilebilecekdersler.concat(mevcutdersler)).join());//contant yer değiştirme
+        </script>
+    </body>
+</html>

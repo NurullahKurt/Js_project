@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    }
+    button{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    background:#e74c3c;
+    border:none;
+    color:#fff;
+    }
+    button:hover{
+    background:#f1c40f;
+     
+    color:#000;
+    }
+    button:disabled{
+    background:#95a5a6;
+    }
+    #durum{
+    font-size: 3em;
+    }
